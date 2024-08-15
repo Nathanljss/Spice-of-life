@@ -1,0 +1,46 @@
+body {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.entries {
+  border: solid;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.hide {
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  margin: 10px;
+  border-radius: 3px;
+  width: 400px;
+  height: 20px;
+}
+.submit {
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
