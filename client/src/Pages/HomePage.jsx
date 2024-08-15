@@ -55,18 +55,21 @@ export function HomePage() {
           placeholder="Artist"
           onChange={handleChange}
           value={form.artist}
+          required
         />
         <input
           name="album"
           placeholder="Album"
           onChange={handleChange}
           value={form.album}
+          required
         />
         <input
           name="song"
           placeholder="Song"
           onChange={handleChange}
           value={form.song}
+          required
         />
         <button className="submit">Submit</button>
       </form>
