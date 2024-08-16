@@ -9,7 +9,7 @@ export function ArtistsPage() {
   }, []);
 
   async function getMusic() {
-    const response = await fetch("http://localhost:8080/music");
+    const response = await fetch("https://ztcagrqcpbqlfcohswak.supabase.co");
     const data = await response.json();
     setMusic(data);
   }
