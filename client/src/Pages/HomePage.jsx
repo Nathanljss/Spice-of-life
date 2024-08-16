@@ -14,9 +14,7 @@ export function HomePage() {
   }, []);
 
   async function getMusic() {
-    const response = await fetch(
-      "https://ztcagrqcpbqlfcohswak.supabase.co"
-    );
+    const response = await fetch("spice-of-life.onrender.com");
     const data = await response.json();
     setMusic(data);
   }
@@ -33,16 +31,13 @@ export function HomePage() {
     console.log("Form is submitted");
     console.log(form);
 
-    await fetch(
-      "https://ztcagrqcpbqlfcohswak.supabase.co",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      }
-    );
+    await fetch("spice-of-life.onrender.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
     getMusic();
   }
 

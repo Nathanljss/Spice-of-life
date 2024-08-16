@@ -9,7 +9,7 @@ export function AlbumsPage() {
   }, []);
 
   async function getMusic() {
-    const response = await fetch("https://ztcagrqcpbqlfcohswak.supabase.co");
+    const response = await fetch("spice-of-life.onrender.com");
     const data = await response.json();
     setMusic(data);
   }
