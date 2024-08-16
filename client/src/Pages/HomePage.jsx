@@ -14,7 +14,9 @@ export function HomePage() {
   }, []);
 
   async function getMusic() {
-    const response = await fetch("http://localhost:8080/music");
+    const response = await fetch(
+      "https://supabase.com/dashboard/project/ztcagrqcpbqlfcohswak/editor/29179"
+    );
     const data = await response.json();
     setMusic(data);
   }
@@ -31,13 +33,16 @@ export function HomePage() {
     console.log("Form is submitted");
     console.log(form);
 
-    await fetch("http://localhost:8080/music", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    });
+    await fetch(
+      "https://supabase.com/dashboard/project/ztcagrqcpbqlfcohswak/editor/29179",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      }
+    );
     getMusic();
   }
 
