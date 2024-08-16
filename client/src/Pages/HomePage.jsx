@@ -14,9 +14,7 @@ export function HomePage() {
   }, []);
 
   async function getMusic() {
-    const response = await fetch("https://spice-of-life.onrender.com/music", {
-      mode: "no-cors",
-    });
+    const response = await fetch("https://spice-of-life.onrender.com/music");
     const data = await response.json();
     setMusic(data);
   }
@@ -34,7 +32,6 @@ export function HomePage() {
     console.log(form);
 
     await fetch("https://spice-of-life.onrender.com/music", {
-      mode: "no-cors",
       method: "POST",
       headers: {
         "Content-Type": "application/json",

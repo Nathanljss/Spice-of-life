@@ -9,9 +9,7 @@ export function SongsPage() {
   }, []);
 
   async function getMusic() {
-    const response = await fetch("https://spice-of-life.onrender.com/music", {
-      mode: "no-cors",
-    });
+    const response = await fetch("https://spice-of-life.onrender.com/music");
     const data = await response.json();
     setMusic(data);
   }
