@@ -31,7 +31,7 @@ export function HomePage() {
     console.log("Form is submitted");
     console.log(form);
 
-    await fetch("spice-of-life.onrender.com", {
+    await fetch("spice-of-life.onrender.com/music", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
