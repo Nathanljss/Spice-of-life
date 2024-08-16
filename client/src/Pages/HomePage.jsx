@@ -15,7 +15,7 @@ export function HomePage() {
 
   async function getMusic() {
     const response = await fetch(
-      "https://supabase.com/dashboard/project/ztcagrqcpbqlfcohswak/editor/29179"
+      "https://ztcagrqcpbqlfcohswak.supabase.co"
     );
     const data = await response.json();
     setMusic(data);
@@ -34,7 +34,7 @@ export function HomePage() {
     console.log(form);
 
     await fetch(
-      "https://supabase.com/dashboard/project/ztcagrqcpbqlfcohswak/editor/29179",
+      "https://ztcagrqcpbqlfcohswak.supabase.co",
       {
         method: "POST",
         headers: {
